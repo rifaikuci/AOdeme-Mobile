@@ -14,7 +14,7 @@ import Button from "./button";
 import AreaCodeModal from "./areaCodeModal";
 
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
 
   const [areas, setAreas] = React.useState([]);
   const [selectedArea, setSelectedArea] = React.useState(null);
@@ -54,14 +54,15 @@ const SignUp = () => {
         colors={[COLORS.orange, COLORS.lightOrange]}
         style={{ flex: 1 }}
       >
-        <Header />
+        <Header navigation = {navigation} />
         <Logo />
         <ScrollView>
 
           <Form setModalVisible={setModalVisible}
                 selectedArea={selectedArea} />
+          <Button />
         </ScrollView>
-        <Button />
+
 
       </LinearGradient>
       <AreaCodeModal areas={areas}

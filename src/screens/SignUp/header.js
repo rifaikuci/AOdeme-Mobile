@@ -4,11 +4,11 @@ import React from "react";
 import styles from "./styles";
 
 
-const Header = () => {
+const Header = (props) => {
   return (
     <TouchableOpacity
       style={styles.headerContent}
-      onPress={() => console.log("Sign Up")}
+      onPress={() => props.navigation.navigate("SignIn")}
     >
       <Image
         source={icons.back}
@@ -16,7 +16,7 @@ const Header = () => {
         style={styles.headerImage}
       />
 
-      <Text style={styles.headerText}>Sign Up</Text>
+      <Text style={styles.headerText}>Sign In</Text>
     </TouchableOpacity>
   );
 

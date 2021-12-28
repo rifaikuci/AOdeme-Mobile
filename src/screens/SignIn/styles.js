@@ -4,40 +4,6 @@ import { COLORS, SIZES, FONTS } from "../../../constants";
 
 export default StyleSheet.create({
 
-  renderItem: {
-    padding: SIZES.padding,
-    flexDirection: "row",
-  },
-
-  renderItemImage: {
-    width: 30,
-    height: 30,
-    marginRight: 10,
-  },
-
-  renderItemText: {
-    ...FONTS.body4,
-  },
-
-  modalBody: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-
-  modalContent: {
-    height: 400,
-    width: SIZES.width * 0.8,
-    backgroundColor: COLORS.lightGreen,
-    borderRadius: SIZES.radius,
-
-  },
-
-  modalFlatList: {
-    padding: SIZES.padding * 2,
-    marginBottom: SIZES.padding * 2,
-  },
-
   signUpContent: {
     margin: SIZES.padding * 3,
   },
@@ -79,33 +45,6 @@ export default StyleSheet.create({
     flex: 1,
   },
 
-  signUpPhoneSelect: {
-    width: 100,
-    height: 50,
-    marginHorizontal: 5,
-    borderBottomColor: COLORS.white,
-    borderBottomWidth: 1,
-    flexDirection: "row",
-    ...FONTS.body2,
-  },
-
-  signUpImageDown: {
-    width: 10,
-    height: 10,
-    tintColor: COLORS.white,
-  },
-
-  signUpImageDownFlag: {
-    width: 30,
-    height: 30,
-  },
-
-
-  signUpPhoneSelectContent: {
-    justifyContent: "center",
-    marginLeft: 5,
-  },
-
   signUpEyeContent: {
     position: "absolute",
     right: 0,
@@ -118,13 +57,6 @@ export default StyleSheet.create({
     height: 20,
     width: 20,
     tintColor: COLORS.white,
-  },
-
-  marketingPermissionText: {
-    color: COLORS.white,
-    ...FONTS.body4,
-    marginLeft: 10,
-    paddingTop: 2,
   },
 
   headerContent: {
@@ -153,4 +85,59 @@ export default StyleSheet.create({
     justifyContent: "center",
   },
 
+  forgetPasswordText: {
+    color: "#0000FF",
+    fontWeight: "bold",
+    padding: 5,
+    ...FONTS.body3,
+  },
+
+  modalBody: {
+    alignItems: "center",
+    marginTop: SIZES.height / 4
+  },
+
+  modalContent: {
+    height: 200,
+    width: SIZES.width * 0.9,
+    backgroundColor: COLORS.lightpurple,
+    borderRadius: SIZES.radius,
+    margin: 5,
+  },
+
+  modalForgetContentView : {
+      margin: SIZES.padding * 2,
+      marginTop: SIZES.padding * 5,
+  },
+
+
+  forgetPasswordTextInputModal : {
+    marginTop: SIZES.padding,
+    borderColor: COLORS.black,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 25
+  },
+
+  forgetPasswordModalButtonText : {
+    ...FONTS.body3,
+    color: COLORS.white
+
+  },
+
+  forgetPasswordModalButton : {
+    borderRadius: SIZES.radius / 1.5,
+    padding: SIZES.padding,
+    margin: SIZES.padding * 2,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: COLORS.orange
+  },
+
+  signUpText: {
+    color: COLORS.lightGray,
+    fontWeight: "bold",
+    padding: 5,
+    ...FONTS.body3,
+  },
 });
