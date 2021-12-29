@@ -2,13 +2,13 @@ import { Text, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
 import React from "react";
 
-const Button = () => {
+const Button = ({navigation}) => {
   return (
     <View style={styles.signUpContent}>
 
       <TouchableOpacity
         style={styles.signUpButtom}
-        onPress={() => console.log("aasdasd")}>
+        onPress={() => navigation.navigate("Otp")}>
         <Text style={styles.signUpButtomText}>Continue</Text>
       </TouchableOpacity>
     </View>
