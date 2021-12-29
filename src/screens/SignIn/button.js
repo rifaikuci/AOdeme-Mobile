@@ -8,7 +8,7 @@ const Button = ({navigation}) => {
 
       <TouchableOpacity
         style={styles.signUpButtom}
-        onPress={() => navigation.navigate("Otp")}>
+        onPress={() => navigation.navigate("Home")}>
         <Text style={styles.signUpButtomText}>Continue</Text>
       </TouchableOpacity>
     </View>

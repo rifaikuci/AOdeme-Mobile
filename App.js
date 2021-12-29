@@ -2,9 +2,13 @@
 
 import React from 'react';
 
-import { SignUp, SignIn } from "./src/screens/";
+import { SignUp, SignIn, Otp } from "./src/screens/";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import Home from "./src/screens/Home";
+import Tabs from "./navigation/tabs";
+import { Platform } from "react-native";
+import { COLORS } from "./constants";
 
 const theme = {
   ...DefaultTheme,
@@ -23,9 +27,16 @@ const App = () => {
         screenOptions={{
           headerShown: false
         }}
-          initialRouteName={'SignIn'} >
+        initialRouteName={'Home'}
+      >
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen name="Otp" component={Otp} />
+
+        <Stack.Screen name="Home" component={Tabs}
+
+        />
+
       </Stack.Navigator>
     </NavigationContainer>
   )

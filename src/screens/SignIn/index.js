@@ -17,6 +17,7 @@ import SignUpText from "./signUpText";
 const SignIn = ({ navigation }) => {
   const [modalVisible, setModalVisible] = React.useState(false);
 
+  console.log(modalVisible);
   return (
 
 
@@ -35,7 +36,7 @@ const SignIn = ({ navigation }) => {
             modalVisible == false && <Form />
           }
           {
-            modalVisible == false && <Button />
+            modalVisible == false && <Button navigation = {navigation} />
           }
           {
             modalVisible == false && <ForgetPasswordText setModalVisible={setModalVisible} />
