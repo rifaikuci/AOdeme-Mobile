@@ -70,6 +70,7 @@ export const FONTS = {
     body3: { fontFamily: "Roboto-Regular", fontSize: SIZES.body3, lineHeight: 22 },
     body4: { fontFamily: "Roboto-Regular", fontSize: SIZES.body4, lineHeight: 22 },
     body5: { fontFamily: "Roboto-Regular", fontSize: SIZES.body5, lineHeight: 22 },
+    h1OpenSans : {fontFamily: "OpenSans-Light", fontSize: 40, lineHeight: 50}
 };
 
 const appTheme = { COLORS, SIZES, FONTS };

@@ -2,13 +2,11 @@
 
 import React from 'react';
 
-import { SignUp, SignIn, Otp } from "./src/screens/";
+import { SignUp, SignIn, Otp, Home } from "./src/screens/";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
-import Home from "./src/screens/Home";
-import Tabs from "./navigation/tabs";
-import { Platform } from "react-native";
-import { COLORS } from "./constants";
+
+import { Tabs } from "./navigation";
 
 const theme = {
   ...DefaultTheme,

@@ -12,6 +12,10 @@ const chat = require("../assets/icons/chat.png");
 const list = require("../assets/icons/list.png");
 const search = require("../assets/icons/search.png");
 const closedEye = require("../assets/icons/closed-eye.png");
+const charts = require("../assets/icons/charts.png");
+const next = require("../assets/icons/next.png");
+const plus = require("../assets/icons/plus.png");
+const scheduling = require("../assets/icons/scheduling.png");
 
 
 
@@ -28,5 +32,9 @@ export default {
     chat,
     list,
     search,
-    closedEye
+    closedEye,
+    charts,
+    next,
+    plus,
+    scheduling
 }
