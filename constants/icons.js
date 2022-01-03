@@ -16,6 +16,8 @@ const charts = require("../assets/icons/charts.png");
 const next = require("../assets/icons/next.png");
 const plus = require("../assets/icons/plus.png");
 const scheduling = require("../assets/icons/scheduling.png");
+const arroundRight = require("../assets/icons/arround-right.png");
+const exchange = require("../assets/icons/exchange.png");
 
 
 
@@ -36,5 +38,7 @@ export default {
     charts,
     next,
     plus,
-    scheduling
+    scheduling,
+    arroundRight,
+    exchange
 }

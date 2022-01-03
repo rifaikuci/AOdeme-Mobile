@@ -75,6 +75,7 @@ export default StyleSheet.create({
 
   homeContent: {
     paddingHorizontal: SIZES.padding * 2,
+    flex: 1,
   },
 
   amountText: {
@@ -91,7 +92,7 @@ export default StyleSheet.create({
   headerTabIconBarContent: {
     justifyContent: "space-between",
     marginLeft: SIZES.padding,
-    margin: SIZES.padding * 2,
+    margin: SIZES.padding ,
     flexDirection: "row",
     paddingHorizontal: SIZES.padding,
   },
@@ -112,7 +113,7 @@ export default StyleSheet.create({
     width: SIZES.width / 12,
     height: SIZES.width / 12,
     resizeMode: "contain",
-    tintColor: COLORS.black,
+    tintColor: COLORS.white,
   },
 
 
@@ -132,6 +133,112 @@ export default StyleSheet.create({
     width: SIZES.width / 12,
     height: SIZES.width / 12,
     resizeMode: "contain",
-    tintColor: COLORS.white,
+    tintColor: COLORS.black,
   },
+
+  notificationLabel: {
+    ...FONTS.h2OpenSans,
+    fontWeight: "bold",
+    marginLeft: SIZES.padding,
+  },
+
+  notificationContent: {
+    height: 90,
+    borderRadius: 15,
+    backgroundColor: COLORS.lightOrange,
+    paddingLeft: 20,
+    paddingRight: 20,
+  },
+
+  notificationContentHeaderText: {
+    color: COLORS.black,
+    ...FONTS.body3,
+    marginBottom: 5,
+    marginTop: 15,
+  },
+
+  notifactionBodyText: {
+    color: COLORS.white,
+    ...FONTS.body5,
+    lineHeight: 14,
+  },
+
+  shadow: {
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.30,
+    shadowRadius: 4.65,
+
+    elevation: 8,
+  },
+
+  flatListItemContent: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: SIZES.padding,
+  },
+
+  flatListItemImage: {
+    width: 20,
+    height: 20,
+    tintColor: COLORS.darkgray,
+  },
+
+  flatListItemTextContext: {
+    flex: 1,
+    marginLeft: 10,
+  },
+
+  flatListItemTextName: {
+    ...FONTS.body3,
+  },
+
+  flatListItemTextDate: {
+    color: COLORS.gray,
+    ...FONTS.body4,
+  },
+
+  flatListItemView: {
+    flexDirection: "row",
+    height: "100%",
+    alignItems: "center",
+  },
+
+  flatListItemAmountPush: {
+    color: COLORS.primary,
+    ...FONTS.body4,
+    marginRight: 5,
+  },
+
+  flatListItemAmountPull: {
+    color: COLORS.black,
+    ...FONTS.body4,
+    marginRight: 5,
+  },
+
+  flatListArroundImage: {
+    width: 15,
+    height: 15,
+    tintColor: COLORS.gray,
+  },
+
+  flatListBody: {
+    marginTop: 6,
+    padding: 10,
+    borderRadius: 10,
+    backgroundColor: COLORS.white,
+    flex: 1,
+    marginBottom: 60,
+  },
+
+  listItemSeperator: {
+    width: "100%",
+    height: 1,
+    backgroundColor: COLORS.lightGray,
+  },
+
+
 });

@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
-  Image, SafeAreaView, Text, TouchableOpacity, View,
+  Image, LogBox, SafeAreaView, Text, TouchableOpacity, View,
 } from "react-native";
-import { icons } from "../../../constants";
+import { dummyData, icons } from "../../../constants";
 import Header from "./header";
 import styles from "./styles";
 import HeaderTopBar from "./headerTopBar";
+import Notification from "./notification";
+import TransactionHistory from "./transactionHistory";
 
 const Home = () => {
 
   const [eyeClose, setEyeClose] = useState(true);
   const [icon, setIcon] = useState(icons.eye);
+  const [transactionHistory, setTransactionHistory] = useState(dummyData.transactionHistory);
+
+  useEffect(() => {
+    LogBox.ignoreLogs(["VirtualizedLists should never be nested"]);
+  }, []);
   const onClickEye = () => {
     setEyeClose(!eyeClose);
     if (eyeClose) setIcon(icons.closedEye); else setIcon(icons.eye);
@@ -24,6 +31,7 @@ const Home = () => {
       <View>
         <Text style={styles.amountText}>€ 668,02</Text>
       </View>
+
       <View style={styles.imageIconEyeContent}>
         <TouchableOpacity
           onPress={onClickEye}
@@ -37,7 +45,11 @@ const Home = () => {
           Current Balance
         </Text>
       </View>
+
       <HeaderTopBar />
+      <Notification />
+      <TransactionHistory history={transactionHistory} />
+
     </View>
   </SafeAreaView>);
 };
