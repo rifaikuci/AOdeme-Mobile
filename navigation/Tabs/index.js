@@ -83,7 +83,7 @@ const Index = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <Image
-              source={icons.more}
+              source={icons.home}
               resizeMode="contain"
               style={styles.bottomTabStyle(focused)}
             />

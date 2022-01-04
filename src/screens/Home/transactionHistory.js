@@ -1,7 +1,9 @@
 import React from "react";
 import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
-import { COLORS, FONTS, icons } from "../../../constants";
+import { icons } from "../../../constants";
 import styles from "./styles";
+import HeaderTopBar from "./headerTopBar";
+import Notification from "./notification";
 
 
 const TransactionHistory = ({ history }) => {
@@ -30,11 +32,15 @@ const TransactionHistory = ({ history }) => {
 
   return (
 
-    <View style={[styles.flatListBody, styles.shadow]}>
-      <Text style={{ ...FONTS.h4, color: COLORS.emerald, marginBottom: 2 }}>Transaction History</Text>
-
+    <View style={[styles.flatListBody]}>
       <FlatList data={history}
                 renderItem={renderItem}
+                ListHeaderComponent={
+                  <View>
+                    <HeaderTopBar />
+                    <Notification />
+                  </View>
+                }
                 keyExtractor={(item) => item.id}
                 ItemSeparatorComponent={() => {
                   return (

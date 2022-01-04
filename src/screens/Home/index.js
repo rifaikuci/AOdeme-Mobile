@@ -46,8 +46,6 @@ const Home = () => {
         </Text>
       </View>
 
-      <HeaderTopBar />
-      <Notification />
       <TransactionHistory history={transactionHistory} />
 
     </View>

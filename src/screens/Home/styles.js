@@ -228,10 +228,10 @@ export default StyleSheet.create({
   flatListBody: {
     marginTop: 6,
     padding: 10,
-    borderRadius: 10,
     backgroundColor: COLORS.white,
     flex: 1,
     marginBottom: 60,
+    marginHorizontal: -20
   },
 
   listItemSeperator: {
