@@ -4,7 +4,7 @@ import { createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom
 import Svg, { Path } from "react-native-svg";
 import { isIphoneX } from "react-native-iphone-x-helper";
 
-import { Home } from "../../src/screens";
+import { Home, Spaces } from "../../src/screens";
 import { COLORS, icons } from "../../constants";
 import styles from "./styles";
 
@@ -96,12 +96,12 @@ const Index = () => {
         }}
       />
       <Tab.Screen
-        name="Scan"
-        component={Home}
+        name="Spaces"
+        component={Spaces}
         options={{
           tabBarIcon: ({ focused }) => (
             <Image
-              source={icons.scan}
+              source={icons.more}
               resizeMode="contain"
               style={styles.bottomTabStyle(focused)}
             />

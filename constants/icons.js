@@ -19,6 +19,7 @@ const scheduling = require("../assets/icons/scheduling.png");
 const arroundRight = require("../assets/icons/arround-right.png");
 const exchange = require("../assets/icons/exchange.png");
 const home = require("../assets/icons/home.png");
+const lock = require("../assets/icons/lock.png");
 
 
 
@@ -42,5 +43,6 @@ export default {
     scheduling,
     arroundRight,
     exchange,
-    home
+    home,
+    lock
 }

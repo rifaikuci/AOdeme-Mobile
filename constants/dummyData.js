@@ -80,29 +80,69 @@ export const transactionHistory = [
   },
 ];
 
-const chartOptions = [
+const categories = [
+  {
+    id: 0,
+    title: "Mobile Design",
+    thumbnail: require("../assets/images/bg_1.png")
+  },
   {
     id: 1,
-    label: "1 hr"
+    title: "3D Modeling",
+    thumbnail: require("../assets/images/bg_2.png")
   },
   {
     id: 2,
-    label: "3 Days"
+    title: "Web Designing",
+    thumbnail: require("../assets/images/bg_3.png")
   },
   {
     id: 3,
-    label: "1 Week"
+    title: "Illustrations",
+    thumbnail: require("../assets/images/bg_4.png")
   },
   {
     id: 4,
-    label: "1 Month"
+    title: "Drawing",
+    thumbnail: require("../assets/images/bg_5.png")
   },
   {
     id: 5,
-    label: "3 Months"
+    title: "Animation",
+    thumbnail: require("../assets/images/bg_6.png")
+  },
+  {
+    id: 6,
+    title: "Mobile Design",
+    thumbnail: require("../assets/images/bg_1.png")
+  },
+  {
+    id: 7,
+    title: "3D Modeling",
+    thumbnail: require("../assets/images/bg_2.png")
+  },
+  {
+    id: 8,
+    title: "Web Designing",
+    thumbnail: require("../assets/images/bg_3.png")
+  },
+  {
+    id: 9,
+    title: "Illustrations",
+    thumbnail: require("../assets/images/bg_4.png")
+  },
+  {
+    id: 10,
+    title: "Drawing",
+    thumbnail: require("../assets/images/bg_5.png")
+  },
+  {
+    id: 11,
+    title: "Animation",
+    thumbnail: require("../assets/images/bg_6.png")
   }
 ]
 
-const dummyData = { portfolio, transactionHistory };
+const dummyData = { portfolio, categories };
 
 export default dummyData;

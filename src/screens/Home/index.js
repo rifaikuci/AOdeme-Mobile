@@ -5,8 +5,6 @@ import {
 import { dummyData, icons } from "../../../constants";
 import Header from "./header";
 import styles from "./styles";
-import HeaderTopBar from "./headerTopBar";
-import Notification from "./notification";
 import TransactionHistory from "./transactionHistory";
 
 const Home = () => {

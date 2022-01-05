@@ -71,7 +71,9 @@ export const FONTS = {
     body4: { fontFamily: "Roboto-Regular", fontSize: SIZES.body4, lineHeight: 22 },
     body5: { fontFamily: "Roboto-Regular", fontSize: SIZES.body5, lineHeight: 14 },
     h1OpenSans : {fontFamily: "OpenSans-Light", fontSize: 40, lineHeight: 50},
-    h2OpenSans : {fontFamily: "OpenSans-Light", fontSize: 16, lineHeight: 30}
+    h2OpenSans : {fontFamily: "OpenSans-Light", fontSize: 16, lineHeight: 30},
+    body1OpenSans : {fontFamily: "OpenSans-Light", fontSize: 16, lineHeight: 20},
+    body2OpenSans : {fontFamily: "OpenSans-Light", fontSize: 8, lineHeight: 10}
 };
 
 const appTheme = { COLORS, SIZES, FONTS };
