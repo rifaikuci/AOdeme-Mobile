@@ -20,6 +20,8 @@ const arroundRight = require("../assets/icons/arround-right.png");
 const exchange = require("../assets/icons/exchange.png");
 const home = require("../assets/icons/home.png");
 const lock = require("../assets/icons/lock.png");
+const explore = require("../assets/icons/explore.png");
+const creditCard = require("../assets/icons/credit-card.png");
 
 
 
@@ -44,5 +46,7 @@ export default {
     arroundRight,
     exchange,
     home,
-    lock
+    lock,
+    explore,
+    creditCard
 }

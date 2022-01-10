@@ -72,6 +72,7 @@ export const FONTS = {
     body5: { fontFamily: "Roboto-Regular", fontSize: SIZES.body5, lineHeight: 14 },
     h1OpenSans : {fontFamily: "OpenSans-Light", fontSize: 40, lineHeight: 50},
     h2OpenSans : {fontFamily: "OpenSans-Light", fontSize: 16, lineHeight: 30},
+    h3OpenSans : {fontFamily: "OpenSans-Light", fontSize: 14},
     body1OpenSans : {fontFamily: "OpenSans-Light", fontSize: 16, lineHeight: 20},
     body2OpenSans : {fontFamily: "OpenSans-Light", fontSize: 8, lineHeight: 10}
 };

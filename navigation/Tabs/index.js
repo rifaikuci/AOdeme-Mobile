@@ -4,7 +4,7 @@ import { createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom
 import Svg, { Path } from "react-native-svg";
 import { isIphoneX } from "react-native-iphone-x-helper";
 
-import { Home, Spaces } from "../../src/screens";
+import { Explore, Home, Spaces } from "../../src/screens";
 import { COLORS, icons } from "../../constants";
 import styles from "./styles";
 
@@ -69,7 +69,7 @@ const Index = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarShowLabel: false,
+        tabBarShowLabel: true,
         headerShown: false,
         tabBarStyle: styles.tabNavigation,
       }}
@@ -114,12 +114,12 @@ const Index = () => {
         }}
       />
       <Tab.Screen
-        name="User"
-        component={Home}
+        name="Explore"
+        component={Explore}
         options={{
           tabBarIcon: ({ focused }) => (
             <Image
-              source={icons.user}
+              source={icons.explore}
               resizeMode="contain"
               style={styles.bottomTabStyle(focused)}
             />
@@ -132,32 +132,12 @@ const Index = () => {
         }}
       />
       <Tab.Screen
-        name="Usesr"
+        name="Cards"
         component={Home}
         options={{
           tabBarIcon: ({ focused }) => (
             <Image
-              source={icons.user}
-              resizeMode="contain"
-              style={styles.bottomTabStyle(focused)}
-
-            />
-          ),
-          tabBarButton: (props) => (
-            <TabBarCustomButton
-              {...props}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Usesdsjjj dr"
-        component={Home}
-        options={{
-          tabBarIcon: ({ focused }) => (
-            <Image
-
-              source={icons.user}
+              source={icons.creditCard}
               resizeMode="contain"
               style={styles.bottomTabStyle(focused)}
 

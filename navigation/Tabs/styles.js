@@ -64,7 +64,7 @@ export default StyleSheet.create({
     left: 0,
     right: 0,
     backgroundColor: "transparent",
-    elevation: 0
+    elevation: 0,
   },
 
   bottomTabStyle : (focused)  => ({
