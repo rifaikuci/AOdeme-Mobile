@@ -4,7 +4,7 @@ import { createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom
 import Svg, { Path } from "react-native-svg";
 import { isIphoneX } from "react-native-iphone-x-helper";
 
-import { Explore, Home, Spaces } from "../../src/screens";
+import { Cards, Explore, Home, Spaces } from "../../src/screens";
 import { COLORS, icons } from "../../constants";
 import styles from "./styles";
 
@@ -69,7 +69,7 @@ const Index = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarShowLabel: true,
+        tabBarShowLabel: false,
         headerShown: false,
         tabBarStyle: styles.tabNavigation,
       }}
@@ -133,7 +133,7 @@ const Index = () => {
       />
       <Tab.Screen
         name="Cards"
-        component={Home}
+        component={Cards}
         options={{
           tabBarIcon: ({ focused }) => (
             <Image

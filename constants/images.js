@@ -4,6 +4,7 @@ const bgDark = require("../assets/images/bg_dark.png");
 const redChair = require("../assets/images/red_chair.png");
 const greenChair = require("../assets/images/green_chair.png");
 const whiteChair = require("../assets/images/white_chair.png");
+const creditCard = require("../assets/images/credit-card.png");
 
 
 export default {
@@ -12,5 +13,6 @@ export default {
     promoBanner,
     redChair,
     greenChair,
-    whiteChair
+    whiteChair,
+    creditCard
 }

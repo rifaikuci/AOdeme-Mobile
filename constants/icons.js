@@ -22,6 +22,8 @@ const home = require("../assets/icons/home.png");
 const lock = require("../assets/icons/lock.png");
 const explore = require("../assets/icons/explore.png");
 const creditCard = require("../assets/icons/credit-card.png");
+const settings = require("../assets/icons/setting.png");
+const debitCard = require("../assets/icons/debit-card.png");
 
 
 
@@ -48,5 +50,7 @@ export default {
     home,
     lock,
     explore,
-    creditCard
+    creditCard,
+    settings,
+    debitCard
 }

@@ -4,6 +4,7 @@ import Otp from "./Otp";
 import Home from "./Home";
 import Spaces from "./Spaces";
 import Explore from "./Explore";
+import Cards from "./Cards";
 
 export {
   SignUp,
@@ -11,5 +12,6 @@ export {
   Otp,
   Home,
   Spaces,
-  Explore
+  Explore,
+  Cards
 };

@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { SignUp, SignIn, Otp, Home, Explore} from "./src/screens/";
+import { SignUp, SignIn, Otp} from "./src/screens/";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { Tabs } from "./navigation";
