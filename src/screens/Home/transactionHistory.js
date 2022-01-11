@@ -35,6 +35,8 @@ const TransactionHistory = ({ history }) => {
     <View style={[styles.flatListBody]}>
       <FlatList data={history}
                 renderItem={renderItem}
+                showsVerticalScrollIndicator={false}
+                showsHorizontalScrollIndicator={false}
                 ListHeaderComponent={
                   <View>
                     <HeaderTopBar />

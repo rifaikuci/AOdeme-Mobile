@@ -4,46 +4,47 @@ import { COLORS, SIZES, FONTS } from "../../../constants";
 
 export default StyleSheet.create({
 
-  container :  {
-    flex: 1
-  },
-
-  containerAvoiddingView : {
+  container: {
     flex: 1,
-    alignItems: "center",
-    padding: 10
   },
 
-  textTile : {
+  containerAvoiddingView: {
+    flex: 3,
+    alignItems: "center",
+    marginVertical: SIZES.height / 5,
+    padding: 10,
+  },
+
+  textTile: {
     marginTop: 50,
     marginBottom: 50,
-    fontSize: 16
+    fontSize: 16,
   },
 
   otpItemText: {
-    width :0,
+    width: 0,
     height: 0,
-    color:"#FFF"
+    color: "#FFF",
   },
 
-  containerInput :{
+  containerInput: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
 
-  cellView :{
+  cellView: {
     paddingVertical: 11,
     width: 40,
     margin: 5,
     justifyContent: "center",
-    alignItems :"center",
-    borderBottomWidth: 1.5
+    alignItems: "center",
+    borderBottomWidth: 1.5,
   },
 
-  cellText : {
+  cellText: {
     textAlign: "center",
-    fontSize: 15
+    fontSize: 15,
   },
 
   bottomView: {
@@ -51,7 +52,7 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     marginBottom: 50,
-    alignItems: "center"
+    alignItems: "center",
   },
 
   btnChangeNumber: {
@@ -59,25 +60,51 @@ export default StyleSheet.create({
     height: 50,
     borderRadius: 10,
     alignItems: "flex-start",
-    justifyContent: "center"
+    justifyContent: "center",
   },
 
-  textChange : {
+  textChange: {
     color: "#234db7",
-    alignItems:"center",
-    fontSize: 15
+    alignItems: "center",
+    fontSize: 15,
   },
 
   btnResend: {
-    width: 150,
-    height: 50,
-    borderRadius: 10,
     alignItems: "flex-end",
-    justifyContent: "center"
+    justifyContent: "center",
+    ...FONTS.body4,
+    padding: 20,
+    color: "white"
   },
 
-  textResend : {
-    alignItems: "center"
-  }
+  btnCancel: {
+    alignItems: "flex-end",
+    ...FONTS.body4,
+    padding: 20,
+    color: "white",
+    fontWeight: "bold"
+  },
+
+  btnContent: {
+    flexDirection: "row",
+    marginTop: 30,
+  },
+
+  btnCancelContent: {
+    margin: 20,
+    borderWidth: 1,
+    borderColor: COLORS.lightOrange,
+    borderRadius: 15,
+    fontWeight: "bold"
+
+  },
+
+  btnResSendContent : (value) => ({
+    margin: 20,
+    borderWidth: 1,
+    borderColor: value > 0  ?  COLORS.black: COLORS.lightOrange,
+    borderRadius: 15
+  }),
+
 
 });

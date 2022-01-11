@@ -34,7 +34,7 @@ const Footer = () => {
   );
 
   return(
-    <View>
+    <View style={{marginBottom: 70}}>
       <Text style={styles.renderCardViewH1}>
         Perks
       </Text>
