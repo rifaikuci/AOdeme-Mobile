@@ -60,7 +60,7 @@ const SignUp = ({navigation}) => {
 
           <Form setModalVisible={setModalVisible}
                 selectedArea={selectedArea} />
-          <Button />
+          <Button  navigation={navigation}/>
         </ScrollView>
 
 

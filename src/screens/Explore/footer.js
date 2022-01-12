@@ -4,7 +4,7 @@ import styles from "./styles";
 import { dummyData } from "../../../constants";
 
 
-const Footer = () => {
+const Footer = ({data}) => {
 
   const renderCard = ({ item }) => (
     <TouchableOpacity
@@ -14,12 +14,12 @@ const Footer = () => {
         <View style={styles.contentViewSubFooter}>
           <Image
             source={item.image}
-            resizeMode={"stretch"}
+            resizeMode={"cover"}
             style={styles.renderCardViewImageFooter}
           />
           <View>
             <Text style={styles.contentViewFooterText}>
-              Reebok Reebok
+              {item.text1}
             </Text>
           </View>
           <View>
@@ -43,7 +43,7 @@ const Footer = () => {
         <FlatList
           horizontal
           showsHorizontalScrollIndicator={false}
-          data={dummyData.productList}
+          data={data}
           renderItem={renderCard}
         />
       </View>

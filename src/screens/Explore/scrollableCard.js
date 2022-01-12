@@ -4,14 +4,14 @@ import { dummyData } from "../../../constants";
 import React from "react";
 
 
-const ScrollableCard = ({headerLabel}) => {
+const ScrollableCard = ({headerLabel, data}) => {
   const renderCard = ({ item }) => (
     <TouchableOpacity
     >
       <View style={styles.renderCardView}>
         <Image
           source={item.image}
-          resizeMode="cover"
+          resizeMode="stretch"
           style={styles.renderCardViewImage}
         />
 
@@ -34,7 +34,7 @@ const ScrollableCard = ({headerLabel}) => {
         <FlatList
           horizontal
           showsHorizontalScrollIndicator={false}
-          data={dummyData.productList}
+          data={data}
           renderItem={renderCard}
         />
       </View>

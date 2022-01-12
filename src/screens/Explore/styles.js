@@ -56,7 +56,7 @@ export default StyleSheet.create({
 
   renderCardViewImage : {
     width: "96%",
-    height: SIZES.height / 6,
+    height: SIZES.height / 5,
     borderRadius: 10
   },
 
@@ -66,19 +66,19 @@ export default StyleSheet.create({
 
   renderCardViewText1 : {
     marginTop: SIZES.base,
-    color: COLORS.white,
+    color: COLORS.black,
     ...FONTS.h2OpenSans,
     marginLeft: 5,
     fontWeight: "bold"
   },
 
   renderCardViewText2 : {
-    color: COLORS.white,
+    color: COLORS.black,
     ...FONTS.body4, marginLeft: 5
   },
 
   renderCardViewText3 : {
-    color: COLORS.white,
+    color: COLORS.black,
     ...FONTS.h3OpenSans,
     marginLeft: 5,
     marginRight: 10
@@ -106,12 +106,14 @@ export default StyleSheet.create({
   renderCardViewImageFooter : {
     width: SIZES.width /7,
     height: SIZES.height /15,
-    margin: 10
+    margin: 10,
+    borderRadius: 50,
   },
 
   contentViewSubFooter : {
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+
   },
 
   contentViewFooter   : {

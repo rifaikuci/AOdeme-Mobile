@@ -30,6 +30,7 @@ const Otp = ({ navigation }) => {
   let oneSecInterval = null;
 
   const onChangeText = (val) => {
+      setInternalVal(val)
     if (val && val.length === 6) {
       navigation.navigate("SignIn");
     }

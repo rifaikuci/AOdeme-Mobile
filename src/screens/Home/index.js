@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
-  Image, LogBox, SafeAreaView, Text, TouchableOpacity, View,
+  Image, ImageBackground, LogBox, SafeAreaView, Text, TouchableOpacity, View,
 } from "react-native";
 import { dummyData, icons } from "../../../constants";
 import Header from "./header";
@@ -27,7 +27,7 @@ const Home = () => {
 
       <Header />
       <View>
-        <Text style={styles.amountText}>€ 668,02</Text>
+        <Text style={styles.amountText}>€ {eyeClose  === true ? "668,02" : "***,**"}</Text>
       </View>
 
       <View style={styles.imageIconEyeContent}>

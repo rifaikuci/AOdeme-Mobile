@@ -9,6 +9,7 @@ const Logo = () => {
   return (
     <View
       style={styles.logoContent}
+      bl
     >
       <Image
         source={images.wallieLogo}

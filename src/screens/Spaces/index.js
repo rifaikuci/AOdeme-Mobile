@@ -27,7 +27,7 @@ const Spaces = () => {
 
         <Header />
         <View>
-          <Text style={styles.amountText}>€ 668,02</Text>
+          <Text style={styles.amountText}>€ {eyeClose === true ? "668,02" : "***,**"}</Text>
         </View>
 
         <View style={styles.imageIconEyeContent}>

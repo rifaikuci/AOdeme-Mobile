@@ -4,6 +4,7 @@ import Header from "./header";
 import styles from "./styles";
 import ScrollableCard from "./scrollableCard";
 import Footer from "./footer";
+import { dummyData } from "../../../constants";
 
 const Explore = () => {
 
@@ -15,10 +16,10 @@ const Explore = () => {
         <ScrollView showsVerticalScrollIndicator={false}
                     showsHorizontalScrollIndicator={false}>
 
-          <ScrollableCard headerLabel={"Teknolojiler"}/>
-          <ScrollableCard headerLabel={"Elektronikler"}/>
-          <ScrollableCard headerLabel={"Trendler"}/>
-          <Footer />
+          <ScrollableCard data={dummyData.tecnologies} headerLabel={"Teknolojiler"}/>
+          <ScrollableCard data={dummyData.electronics} headerLabel={"Elektronikler"}/>
+          <ScrollableCard data={dummyData.trendler} headerLabel={"Trendler"}/>
+          <Footer data={dummyData.perks}/>
         </ScrollView>
       </View>
     </SafeAreaView>
